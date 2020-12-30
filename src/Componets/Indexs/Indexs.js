@@ -3,7 +3,6 @@ import About from "../About/About";
 import Blog from "../Blog/Blog";
 import Features from "../Features/Features";
 import Footer from "../Footer/Footer";
-// import HomeSection from "../HomeSection/HomeSection";
 import Pricing from "../Pricing/Pricing";
 import Statistic from "../Statistic/Statistic";
 import WhatSay from "../WhatSay/WhatSay";

@@ -11,7 +11,7 @@ class Features extends Component{
       this.setState({
         features:res.data.features
       })
-    })
+    }).then(this.state.features)
   }
   render(){
     const {features} =this.state
