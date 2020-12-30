@@ -3,6 +3,7 @@ import {  NavLink } from "react-router-dom";
 import "./NavBar.css";
 import "./media.css";
 import ImageBacground from "../../images/banner-bg.png";
+import Logo from "../../images/logo.png";
 const NavBar=()=>{
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     const handleNavCollapse  = () => setIsNavCollapsed(!isNavCollapsed);
@@ -20,7 +21,7 @@ const NavBar=()=>{
                 </svg>
               </label>
               <ol className='menu__content' className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`}>
-                <li className="menu-item"><NavLink to="/" exact><i className="fa fa-home fa-fw"></i> Home</NavLink></li>
+                <li className="menu-item"><NavLink to="/" ><i className="fa fa-home fa-fw"></i> Home</NavLink></li>
                 <li className="menu-item"><NavLink to="/j" exact><i className="fa fa-info-circle fa-fw"></i> About</NavLink></li>
                 <li className="menu-item"><NavLink to="/j" exact><i className="fa fa-diamond fa-fw"></i> Work Process</NavLink></li>
                 <li className="menu-item"><NavLink to="/j" exact><i className="fa fa-life-saver fa-fw"></i> Testimonials</NavLink></li>
@@ -36,7 +37,7 @@ const NavBar=()=>{
             <div className="row align-items-start">
               <div className="col-md-3">
                   <div className="logo">
-                    <img src="/images/logo.png" alt="imagelogo"/>
+                    <img src={Logo}alt="imagelogo"/>
                   </div>
               </div>
               <div className="col-md-9">

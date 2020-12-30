@@ -1,5 +1,7 @@
 import { Component, Fragment } from "react";
 import "./About.css";
+import imageAboutLeft from "../../images/left-image.png";
+import imageAboutRight from "../../images/right-image.png";
 
 class About extends Component{
   render(){
@@ -10,7 +12,7 @@ class About extends Component{
           <div className="row">
             <div className="col-md-6 text-center">
               <div className="content-left">
-                <img src="./images/left-image.png" alt="About Company"/>
+                <img src={imageAboutLeft} alt="About Company"/>
               </div>
             </div>
             <div className="col-md-6 align-self-center">
@@ -34,7 +36,7 @@ class About extends Component{
             </div>
             <div className="col-md-6 text-center">
               <div className="content-right">
-              <img src="./images/right-image.png" alt="About Company"/>
+              <img src={imageAboutRight} alt="About Company"/>
               </div>
             </div>
           </div>
